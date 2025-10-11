@@ -28,8 +28,9 @@ main {
     margin-top: 3em;
 }
 header {
-    text-align: center;
-    margin: auto 2em;
+    margin: 2em auto;
+    padding: 20px;
+    max-width: 960px;
 }
 
 section {
@@ -65,8 +66,9 @@ h1, h2, h3 {
 
 .header-content {
     display: flex;
-    align-items: center; /* Dikeyde ortalama */
-    gap: 20px; /* Resim ve metin arası boşluk */
+    align-items: center;
+    justify-content: flex-start; /* sola hizalama */
+    gap: 20px;
 }
 
 .profile-photo {
@@ -75,9 +77,11 @@ h1, h2, h3 {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #444;
+    flex-shrink: 0; /* Fotoğrafın küçülmesini engeller */
 }
 
 .header-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
